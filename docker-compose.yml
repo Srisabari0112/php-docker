@@ -60,7 +60,7 @@ services:
     image: 'mailhog/mailhog:latest'
     container_name: mailhog
     ports:
-      - '${MAILHOG_EXTERNAL_PORT}:8025'
+      - '${MAILHOG_EXTERNAL_PORT}:8125'
     restart: ${MAILHOG_RESTART_POLICY:-unless-stopped}
   
   phpmyadmin:
